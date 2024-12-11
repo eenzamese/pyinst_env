@@ -11,7 +11,7 @@ with open('pyinst_env\\ms_version.txt', 'r') as version_file:
 print('######### CURRENT VERSION #########')
 print(version_content)
 version_value = str(random.randint(10000, 99999)) 
-new_version = version_content.replace('__VERSION__', args.version)
+new_version = version_content.replace('__VERSION__', args.version[4:])
 print('######### NEW VERSION #########')
 with open('..\\ms_version_1.txt', 'w') as version_file:
   version_file.write(new_version)
