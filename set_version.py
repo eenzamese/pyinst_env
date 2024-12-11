@@ -1,7 +1,7 @@
 import time
 import random
 print(time.ctime())
-with open('ms_version.txt', 'r') as version_file:
+with open('..\\pyinst_env\\ms_version.txt', 'r') as version_file:
   version_content = version_file.read()
 print('CURRENT#########VERSION')
 print(version_content)
